@@ -9,6 +9,10 @@
         {%- endif -%}
         <ul class="grid grid--uniform grid--view-items">
           {%- for product in recommendations.products -%}
+            {% comment %} do not include child products of merged products - am {% endcomment %}
+            {% if product.tags contains "shsdchildproduct" %}
+              {% continue %}
+            {% endif %} 
             <li class="grid__item small--one-half medium-up--one-quarter">
               {% include 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
             </li>
