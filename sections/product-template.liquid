@@ -323,7 +323,9 @@
 {% endunless %}
 
 
-
+<script>
+document.querySelector(".single-option-selector").dispatchEvent(new Event("change"));
+</script>
 {% schema %}
 {
   "name": {
