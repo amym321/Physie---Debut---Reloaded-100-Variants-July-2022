@@ -324,9 +324,13 @@
 
 
 <script>
-(function(){
-document.querySelector(".single-option-selector").dispatchEvent(new Event("change"));
-})();
+var checkFirstOptionLoaded = setInterval(function(){
+	var firstSelector = document.querySelector(".single-option-selector");
+	if(firstSelector){
+		firstSelector.dispatchEvent(new Event("change"));	
+		clearInterval(checkFirstOptionLoaded)	
+	}
+},500)
 </script>
 {% schema %}
 {
