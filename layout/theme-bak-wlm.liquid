@@ -185,8 +185,7 @@
     }
   </script>
 
-  {% include 'wlm-head' %}
-{{ content_for_header }}
+  {{ content_for_header }}
 {% include 'hulk_po_vd.liquid' %}
 </head>
 
@@ -203,7 +202,7 @@
   <div class="page-container drawer-page-content" id="PageContainer">
 
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
-      {% comment %}{{ content_for_layout }}{% endcomment %}{% include 'wlm-body' %}
+      {{ content_for_layout }}
     </main>
 
     {% section 'footer' %}
