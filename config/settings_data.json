@@ -312,12 +312,6 @@
             "settings": {
               "collection": "jewellery"
             }
-          },
-          "fc31b9f5-9597-46ca-9b93-b1496d334191": {
-            "type": "collection",
-            "settings": {
-              "collection": "teacher-resources"
-            }
           }
         },
         "block_order": [
@@ -328,8 +322,7 @@
           "72472b2a-12a6-46aa-a63b-9e269ed3f326",
           "94867eb5-15f4-4676-9418-811858294ef3",
           "bba439c3-3508-4d21-85ab-99b63ec7680e",
-          "8cdc7c2e-5449-4ff9-b9c9-c79b992b3b14",
-          "fc31b9f5-9597-46ca-9b93-b1496d334191"
+          "8cdc7c2e-5449-4ff9-b9c9-c79b992b3b14"
         ],
         "settings": {
           "display_type": "selected",
