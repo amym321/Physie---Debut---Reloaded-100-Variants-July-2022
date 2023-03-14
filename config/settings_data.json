@@ -264,8 +264,75 @@
       },
       "list-collections-template": {
         "type": "list-collections-template",
+        "blocks": {
+          "be4214f0-fcdb-4e65-8cad-7650523f92fd": {
+            "type": "collection",
+            "settings": {
+              "collection": "performance-wear"
+            }
+          },
+          "50e187f6-58d1-4f6c-b23d-f8c1cfcdec85": {
+            "type": "collection",
+            "settings": {
+              "collection": "competition-hair-accessories"
+            }
+          },
+          "6ca0e7b8-eec7-44fc-b292-08e7e5ce2e1a": {
+            "type": "collection",
+            "settings": {
+              "collection": "gift-cards"
+            }
+          },
+          "54cb91e5-0010-4651-a32c-46a0487af96d": {
+            "type": "collection",
+            "settings": {
+              "collection": "bags"
+            }
+          },
+          "72472b2a-12a6-46aa-a63b-9e269ed3f326": {
+            "type": "collection",
+            "settings": {
+              "collection": "books"
+            }
+          },
+          "94867eb5-15f4-4676-9418-811858294ef3": {
+            "type": "collection",
+            "settings": {
+              "collection": "accessories"
+            }
+          },
+          "bba439c3-3508-4d21-85ab-99b63ec7680e": {
+            "type": "collection",
+            "settings": {
+              "collection": "all"
+            }
+          },
+          "8cdc7c2e-5449-4ff9-b9c9-c79b992b3b14": {
+            "type": "collection",
+            "settings": {
+              "collection": "jewellery"
+            }
+          },
+          "fc31b9f5-9597-46ca-9b93-b1496d334191": {
+            "type": "collection",
+            "settings": {
+              "collection": "teacher-resources"
+            }
+          }
+        },
+        "block_order": [
+          "be4214f0-fcdb-4e65-8cad-7650523f92fd",
+          "50e187f6-58d1-4f6c-b23d-f8c1cfcdec85",
+          "6ca0e7b8-eec7-44fc-b292-08e7e5ce2e1a",
+          "54cb91e5-0010-4651-a32c-46a0487af96d",
+          "72472b2a-12a6-46aa-a63b-9e269ed3f326",
+          "94867eb5-15f4-4676-9418-811858294ef3",
+          "bba439c3-3508-4d21-85ab-99b63ec7680e",
+          "8cdc7c2e-5449-4ff9-b9c9-c79b992b3b14",
+          "fc31b9f5-9597-46ca-9b93-b1496d334191"
+        ],
         "settings": {
-          "display_type": "all",
+          "display_type": "selected",
           "sort": "date_reversed",
           "grid": 3
         }
