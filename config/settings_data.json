@@ -271,16 +271,16 @@
               "collection": "performance-wear"
             }
           },
-          "50e187f6-58d1-4f6c-b23d-f8c1cfcdec85": {
-            "type": "collection",
-            "settings": {
-              "collection": "competition-hair-accessories"
-            }
-          },
           "6ca0e7b8-eec7-44fc-b292-08e7e5ce2e1a": {
             "type": "collection",
             "settings": {
               "collection": "gift-cards"
+            }
+          },
+          "50e187f6-58d1-4f6c-b23d-f8c1cfcdec85": {
+            "type": "collection",
+            "settings": {
+              "collection": "competition-hair-accessories"
             }
           },
           "54cb91e5-0010-4651-a32c-46a0487af96d": {
@@ -316,8 +316,8 @@
         },
         "block_order": [
           "be4214f0-fcdb-4e65-8cad-7650523f92fd",
-          "50e187f6-58d1-4f6c-b23d-f8c1cfcdec85",
           "6ca0e7b8-eec7-44fc-b292-08e7e5ce2e1a",
+          "50e187f6-58d1-4f6c-b23d-f8c1cfcdec85",
           "54cb91e5-0010-4651-a32c-46a0487af96d",
           "72472b2a-12a6-46aa-a63b-9e269ed3f326",
           "94867eb5-15f4-4676-9418-811858294ef3",
