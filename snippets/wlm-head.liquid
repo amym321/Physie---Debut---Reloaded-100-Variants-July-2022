@@ -44,6 +44,17 @@ wlm.navigateListByAuth.may.push({lcid: '161681', hp: 'tymyMwJaj/IGb/JubdOhQw==',
 {% endunless %}
 
 
+{% unless wlmLockON or wlmSuperPage or template == 'customers/register' %}
+{% assign wlmLockedContent = false %}
+{% if template contains "product" and product %} {% if product.id == 7188759773391 %} {% assign wlmLockedContent = true %}{% endif %}{% endif %}{% if wlmLockedContent %}
+<meta name='robots' content='NOINDEX,NOFOLLOW,NOARCHIVE,NOSNIPPET,NOODP,NOYDIR' />
+<script type='text/javascript'>
+wlm.navigateListByAuth.may.push({lcid: '164989', hp: 'J787cEVi+KGdz1/aFn/4Zg==', wlmPwdMsg: '<p><br></p>', pp: ''});
+</script>
+{% endif %}
+{% endunless %}
+
+
 {% endif %}
 
 {% capture wlm_check_hide %}{% include 'wlm-hideByLink' %}{% endcapture %}{% unless wlm_check_hide contains 'Liquid error' %}{% include 'wlm-hideByLink' %}{% endunless %}

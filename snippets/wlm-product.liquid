@@ -1,5 +1,8 @@
 {%- assign w_continue = 'no' -%}
-{% assign wlmHideItem_Product = false %}
+{% assign wlmHideItem_Product = false %}{% if wlm-product.id == 7188759773391 %} 
+{% assign  wlmHideItem_Product = true %}{% endif %}
+
+
 
 {% if wlmHideItem_Product == true %}{% continue %}{% endif %}
 
