@@ -139,6 +139,7 @@
 
       <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
         {% for product in collection.products %}
+          {% include 'wlm-product' with product %}
           {% comment %} do not include child products of merged products - am {% endcomment %}
           {% if product.tags contains "shsdchildproduct" %}
             {% continue %}
@@ -182,6 +183,7 @@
     {% else %}
       <ul class="list-view-items">
         {% for product in collection.products %}
+          {% include 'wlm-product' with product %}
           {% comment %} do not include child products of merged products - am {% endcomment %}
           {% if product.tags contains "shsdchildproduct" %}
             {% continue %}
