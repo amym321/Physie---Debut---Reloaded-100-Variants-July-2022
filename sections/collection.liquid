@@ -26,6 +26,7 @@
 
   <ul class="grid grid--uniform grid--view-items">
     {% for product in collection.products limit: product_limit %}
+      {% include 'wlm-product' with product %}
       {% comment %} do not include child products of merged products - am {% endcomment %}
       {% if product.tags contains "shsdchildproduct" %}
         {% continue %}
