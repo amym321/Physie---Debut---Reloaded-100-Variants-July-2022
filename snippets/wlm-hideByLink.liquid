@@ -1,1 +1,14 @@
 {% assign wlmHideLinks=false %}
+{% assign wlmHideLinks=false %}
+{% unless customer %}
+{% assign wlmHideLinks = true %}
+{% else %}
+{% endunless %}
+
+{% if wlmHideLinks %}
+<script type='text/javascript'>
+wlm.arrHideLinks.push('a[href$="/products/2020-yearbook"],a[href*="/products/2020-yearbook/"],a[href*="/products/2020-yearbook?"],a[href*="/products/2020-yearbook#"]');
+</script><style type='text/css' class='wlm-auto-hl-styles'>a[href$="/products/2020-yearbook"],a[href*="/products/2020-yearbook/"],a[href*="/products/2020-yearbook?"],a[href*="/products/2020-yearbook#"]{ display: none !important; }</style>
+{% endif %}
+
+
