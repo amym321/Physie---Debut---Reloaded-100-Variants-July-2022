@@ -30,12 +30,14 @@
       {% endcase %}
       {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
         {% for collection in collections %}
+          {% include 'wlm-collection' with collection %}
           <li class="grid__item {{ grid_item_width }}">
             {% include 'collection-grid-item', collection: collection %}
           </li>
         {% endfor %}
       {% else %}
         {% for collection in collections reversed %}
+          {% include 'wlm-collection' with collection %}
           <li class="grid__item {{ grid_item_width }}">
             {% include 'collection-grid-item', collection: collection %}
           </li>
