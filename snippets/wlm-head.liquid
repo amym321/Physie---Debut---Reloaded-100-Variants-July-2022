@@ -82,20 +82,6 @@ wlm.navigateListByAuth.may.push({lcid: '165216', hp: 'J787cEVi+KGdz1/aFn/4Zg==',
 {% endunless %}
 
 
-{% unless wlmLockON or wlmSuperPage or template == 'customers/register' %}
-{% assign wlmLockedContent = false %}
-{% if template contains "product" and product %} {% if product.id == 6678586425551 %} {% assign wlmLockedContent = true %}{% endif %}{% endif %}{% if wlmLockedContent %}
-{% unless customer %}
-{% assign wlmLockON = true %}
-{% capture wlmPnfHead %}Page not found{% endcapture %}
-{% capture wlmPnfMsg %}<p>Sorry, we couldn't find this page.</p>{% endcapture %}
-{% capture wlmRedirectURL %}login{% endcapture %}
-{% else %}
-{% endunless %}
-{% endif %}
-{% endunless %}
-
-
 {% endif %}
 
 {% capture wlm_check_hide %}{% include 'wlm-hideByLink' %}{% endcapture %}{% unless wlm_check_hide contains 'Liquid error' %}{% include 'wlm-hideByLink' %}{% endunless %}
