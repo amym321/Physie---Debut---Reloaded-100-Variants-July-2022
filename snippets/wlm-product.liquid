@@ -10,6 +10,9 @@
 
 {% endif %}
 {% endfor %}{% endif %}
+{% if wlm-product.id == 7188759773391 or wlm-product.id == 7189025095887 %} 
+{% assign  wlmHideItem_Product = true %}{% endif %}
+
 
 
 {% if wlmHideItem_Product == true %}{% continue %}{% endif %}
