@@ -312,6 +312,13 @@
             "settings": {
               "collection": "jewellery"
             }
+          },
+          "4336a60a-218b-4edb-882c-dfe6cb7c5dc5": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
+            }
           }
         },
         "block_order": [
@@ -322,7 +329,8 @@
           "72472b2a-12a6-46aa-a63b-9e269ed3f326",
           "94867eb5-15f4-4676-9418-811858294ef3",
           "bba439c3-3508-4d21-85ab-99b63ec7680e",
-          "8cdc7c2e-5449-4ff9-b9c9-c79b992b3b14"
+          "8cdc7c2e-5449-4ff9-b9c9-c79b992b3b14",
+          "4336a60a-218b-4edb-882c-dfe6cb7c5dc5"
         ],
         "settings": {
           "display_type": "selected",
