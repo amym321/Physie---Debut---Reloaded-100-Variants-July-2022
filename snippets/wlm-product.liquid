@@ -14,6 +14,17 @@
 {% assign  wlmHideItem_Product = true %}{% endif %}
 
 
+{% if wlm-product.collections %}
+
+                            {% for c in wlm-product.collections %}
+{% if c.id == 291876307151 %} 
+ {% if wlm_collection == null %}{% assign wlm_collection = 1 %}{%endif %}
+{% unless wlm_collection == "291876307151" or collection.id == 291876307151 %}
+{% assign  wlmHideItem_Product = true %}{% endunless %}
+
+{% endif %}
+{% endfor %}{% endif %}
+
 
 {% if wlmHideItem_Product == true %}{% continue %}{% endif %}
 
