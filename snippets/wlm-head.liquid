@@ -82,6 +82,33 @@ wlm.navigateListByAuth.may.push({lcid: '165253', hp: 'J787cEVi+KGdz1/aFn/4Zg==',
 {% endunless %}
 
 
+{% unless wlmLockON or wlmSuperPage or template == 'customers/register' %}
+{% assign wlmLockedContent = false %}
+{% if template contains "collection" or template contains "product" %}
+{% if product.collections %}
+{% for c in product.collections %}
+{% if c.id == 291876307151 %} 
+{% assign wlmLockedContent = true %}{% break %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endif %}
+{% if template contains 'collection' or template contains 'product' %}
+{% if collection %}
+{% if   collection.handle == 'teams' %}
+{% assign wlmLockedContent = true %}
+{% endif %}
+{% endif %}
+{% endif %}
+{% if wlmLockedContent %}
+<meta name='robots' content='NOINDEX,NOFOLLOW,NOARCHIVE,NOSNIPPET,NOODP,NOYDIR' />
+<script type='text/javascript'>
+wlm.navigateListByAuth.may.push({lcid: '170591', hp: 'VIf0+lKgSOhi/icQbecnyg==', wlmPwdMsg: '<p><br></p>', pp: ''});
+</script>
+{% endif %}
+{% endunless %}
+
+
 {% endif %}
 
 {% capture wlm_check_hide %}{% include 'wlm-hideByLink' %}{% endcapture %}{% unless wlm_check_hide contains 'Liquid error' %}{% include 'wlm-hideByLink' %}{% endunless %}
