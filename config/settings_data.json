@@ -155,19 +155,10 @@
       "image-bar": {
         "type": "image-bar",
         "blocks": {
-          "image-bar-0": {
+          "3e511c2a-6959-45bb-a2b2-279a7c68c223": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bags.png",
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          },
-          "image-bar-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/bjp_merch-14.jpg",
+              "image": "shopify:\/\/shop_images\/Mum_mug.jpg",
               "alignment": "center",
               "link": "",
               "cta_label": ""
@@ -181,12 +172,21 @@
               "link": "",
               "cta_label": ""
             }
+          },
+          "31d4bc40-c0bd-4442-8158-ae6ee2a494e1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Travel_bag.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
           }
         },
         "block_order": [
-          "image-bar-0",
-          "image-bar-1",
-          "image-bar-2"
+          "3e511c2a-6959-45bb-a2b2-279a7c68c223",
+          "image-bar-2",
+          "31d4bc40-c0bd-4442-8158-ae6ee2a494e1"
         ],
         "settings": {
           "section_height": "medium"
