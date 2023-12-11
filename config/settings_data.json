@@ -425,7 +425,7 @@
         "type": "password-header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/ll.png",
-          "logo_max_width": 260,
+          "logo_max_width": 420,
           "header": "The Physie Shop is closed over the Christmas and new year break"
         }
       },
