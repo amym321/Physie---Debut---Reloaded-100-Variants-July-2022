@@ -426,7 +426,7 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/ll.png",
           "logo_max_width": 260,
-          "header": "The Physie Shop is closed over the Christmas break"
+          "header": "The Physie Shop is closed over the Christmas and new year break"
         }
       },
       "password-content": {
@@ -435,7 +435,7 @@
 
         ],
         "settings": {
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_form_heading": "We will be back open on 8th January 2024",
           "newsletter_form_subheading": "",
           "newsletter_placeholder": "Email address",
