@@ -191,7 +191,7 @@
     }
   </script>
 
-  {% include 'wlm-head' %}
+  {% unless request.design_mode %}{% include 'wlm-head' %}{% endunless %}
 {{ content_for_header }}
 {% include 'hulk_po_vd.liquid' %}
 </head>
