@@ -23,6 +23,15 @@
 {% endif %}
 {% endfor %}{% endif %}
 
+{%  if wlm-search.object_type == 'product' and wlm-search.collections %}
+
+{% for c in wlm-search.collections %}
+
+    {% if c.id == 294319423695 %}
+{% assign wlmHideItem_Search = true %}
+{% endif %}
+{% endfor %}{% endif %}
+
 
 {% if wlmHideItem_Search == true %}{% continue %}{% endif %}
 
