@@ -1,0 +1,49 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+
+      {% comment %} buttons - am {% endcomment %}
+      <div class="buttons-contact">
+        <span class="contact-button">
+          <a href="/pages/questions">
+            <button type="button" class="btn newsletter__submit" name="commit" >
+              <span class="newsletter__submit-text--large">Got questions?</span>
+            </button>
+          </a>
+        </span>
+        <span class="contact-button">
+          <a href="/pages/request-return">
+            <button type="button" class="btn newsletter__submit" name="commit" >
+              <span class="newsletter__submit-text--large">Want to make a return?</span>
+            </button>
+          </a>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .buttons-contact {
+    display: flex;
+  }
+  .contact-button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* hide hulk tag */
+  .hulk-powered-wrapper a,
+  .hulk-powered-wrapper {
+    display: none !important;
+  }
+</style>
