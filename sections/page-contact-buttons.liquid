@@ -1,0 +1,98 @@
+
+{% if section.settings.show_general_btn or section.settings.show_return_btn %}
+
+<div class="buttons-contact">
+  {% if section.settings.show_general_btn %}
+    <span class="{% if section.settings.show_return_btn %}contact-button-50 {% else %} contact-button-100 {% endif %}">
+      <a href="/pages/questions">
+        <button type="button" class="btn newsletter__submit " name="commit" >
+          <span class="newsletter__submit-text--large">{{section.settings.general_button}}</span>
+        </button>
+      </a>
+    </span>
+  {% endif %}
+  {% if section.settings.show_return_btn %}
+    <span class="{% if section.settings.show_general_btn %}contact-button-50 {% else %} contact-button-100 {% endif %}">
+      <a href="/pages/request-return">
+        <button type="button" class="btn newsletter__submit" name="commit" >
+          <span class="newsletter__submit-text--large">{{section.settings.return_button}}</span>
+        </button>
+      </a>
+    </span>
+  {% endif %}
+</div>
+
+{% endif %}
+
+
+<style>
+  .buttons-contact {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .contact-button-50,
+  .contact-button-100 {
+    display: flex;
+    justify-content: center;
+  }
+  .buttons-contact button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 255px;
+  }
+
+  @media (min-width: 769px) {
+    .buttons-contact {
+      display: flex;
+    }
+    .contact-button-50 {
+      width: 50%;
+    }
+    .contact-button-100 {
+      width: 100%;
+    }
+  }
+
+
+
+
+  /* hide hulk tag */
+  .hulk-powered-wrapper a,
+  .hulk-powered-wrapper {
+    display: none !important;
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Contact buttons",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_general_btn",
+        "label": "display general button",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "general_button",
+        "label": "General Contact button text",
+        "default": "Got a question?"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_return_btn",
+        "label": "display return button",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "return_button",
+        "label": "Returns button text",
+        "default": "Want to make a return?"
+      }
+    ]
+  }
+  {% endschema %}
+  

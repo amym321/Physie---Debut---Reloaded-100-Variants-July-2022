@@ -10,57 +10,9 @@
       </div>
 
       {% comment %} buttons - am {% endcomment %}
-      <div class="buttons-contact">
-        <span class="contact-button">
-          <a href="/pages/questions">
-            <button type="button" class="btn newsletter__submit " name="commit" >
-              <span class="newsletter__submit-text--large">Got a question?</span>
-            </button>
-          </a>
-        </span>
-        <span class="contact-button">
-          <a href="/pages/request-return">
-            <button type="button" class="btn newsletter__submit" name="commit" >
-              <span class="newsletter__submit-text--large">Want to make a return?</span>
-            </button>
-          </a>
-        </span>
-      </div>
+      {% section 'page-contact-buttons' %}
 
     </div>
   </div>
 </div>
 
-<style>
-  .buttons-contact {
-    margin-top: 40px;
-    margin-bottom: 50px;
-  }
-  .contact-button {
-    display: flex;
-    justify-content: center;
-  }
-  .buttons-contact button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 255px;
-  }
-
-  @media (min-width: 769px) {
-    .buttons-contact {
-      display: flex;
-    }
-    .contact-button {
-      width: 50%;
-    }
-  }
-
-
-
-
-  /* hide hulk tag */
-  .hulk-powered-wrapper a,
-  .hulk-powered-wrapper {
-    display: none !important;
-  }
-</style>
